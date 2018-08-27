@@ -1,0 +1,34 @@
+#Select your environment
+
+# for APPLE
+#OSFLAG = -DBSD
+#LIBS = 
+#LINKFLAGS  =
+#IFLAGS= 
+
+# for BSD
+#OSFLAG = -DBSD
+#LIBS = 
+#LINKFLAGS  =
+#IFLAGS= 
+
+# for Linux
+OSFLAG = -DLINUX
+LIBS =
+LINKFLAGS = -lm -lrt
+
+
+
+LINKOPTIONS = -pthread -o 
+
+
+CC = gcc
+CFLAGS = -c -ggdb -O2 -Wall $(OSFLAG) $(IFLAGS)
+CPLUS = g++
+CPLUSFLAGS = -c -ggdb -O2 -Wall $(OSFLAG)
+
+
+CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \
+		*.lc *.lh *.bsdi *.sparc *.uw
+
+

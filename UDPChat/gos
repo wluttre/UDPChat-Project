@@ -1,0 +1,2 @@
+echo "start server at port 5000 and debugFlag 129 and loss rate 0% "
+./server 5000 129 0

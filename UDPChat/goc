@@ -1,0 +1,6 @@
+echo "start client: localhost 5000 hdiesl"
+./client localhost 5000 hdiesl
+
+
+
+
